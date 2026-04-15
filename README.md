@@ -2,7 +2,9 @@ PowerHoneyPot
 <br>
 # A Simple TCP Honeypot For PowerShell
 
-### ** This PowerShell script opens up a TCP listener (socket) on every single port on a Windows machine **
+### ** V1 of this PowerShell script opens up a TCP listener (socket) on every single port on a Windows machine **
+### ** V2 of this PowerShell is a stealth honeypot as it doesn't open a listener, but takes note of any port accesses attempts, writes them to the console and to a local log file. This way the threat actor who kicks off a port scan doesn't see any results, but you do! **
+
 
 To make this run there are a couple of pre-requisites
 * It must be run as Administrator as it listens on 'low ports' which are ports below 1024
